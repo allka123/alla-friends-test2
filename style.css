@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #ffd1e8, #ff9acb);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hidden { display: none; }
+
+#login, #game, #final {
+  background: white;
+  width: 720px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(255,0,128,0.3);
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+button {
+  background: #ff4fa3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#puzzle {
+  width: 800px;
+  height: 800px;
+  margin: 20px auto;
+  position: relative;
+  border: 4px dashed #ff69b4;
+  border-radius: 40px;
+  background: #fff0f7;
+}
+
+.piece {
+  position: absolute;
+  cursor: grab;
+  transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+}
+
+.blackout {
+  filter: brightness(0);
+}
