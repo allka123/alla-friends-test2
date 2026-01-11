@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Собери Аллу 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h1>💗 Система доверия Аллы 💗</h1>
+  <input id="loginInput" placeholder="Логин">
+  <input id="passInput" type="password" placeholder="Пароль">
+  <button onclick="auth()">Войти 💕</button>
+  <p id="error"></p>
+</div>
+
+<div id="game" class="hidden">
+  <h2 class="title">💗 Собери пазл — и Алла добавит тебя в друзья 💗</h2>
+  <div id="puzzle"></div>
+</div>
+
+<div id="final" class="hidden">
+  <h1>❌ Почти получилось</h1>
+  <p>Ты потерял последний кусок.</p>
+  <p><b>Алла не добавит тебя в друзья.</b></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
